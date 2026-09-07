@@ -46,3 +46,37 @@ footer {
   margin: 0 auto;
   padding: 16px;
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.course-card {
+  padding: 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.course-card h2 {
+  margin-top: 0;
+}
+
+.course-card a {
+  color: #0d6efd;
+}
+
+#about {
+  margin-top: 32px;
+}
+
+footer {
+  color: #6c757d;
+}
+
+@media (min-width: 992px) {
+  .course-card {
+    padding: 24px;
+  }
+}
