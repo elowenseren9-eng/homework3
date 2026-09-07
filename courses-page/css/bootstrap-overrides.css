@@ -1,0 +1,27 @@
+body {
+  color: #27313b;
+  background-color: #f8fafc;
+}
+
+.navbar-brand {
+  color: #174ea6;
+  font-weight: 700;
+}
+
+.card {
+  border-color: #cfd8e3;
+}
+
+.card .card-title {
+  color: #0b5ed7;
+}
+
+.card .btn {
+  min-width: 7rem;
+}
+
+@media (min-width: 992px) {
+  .card .card-body {
+    padding: 1.5rem;
+  }
+}
