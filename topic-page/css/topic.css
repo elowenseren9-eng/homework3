@@ -18,6 +18,11 @@ a {
   color: #176844;
 }
 
+a:focus-visible {
+  outline: 3px solid #e0a928;
+  outline-offset: 3px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -50,6 +55,7 @@ a {
 }
 
 .main-nav a {
+  padding: 0.2rem 0;
   text-decoration: none;
 }
 
@@ -60,7 +66,10 @@ main,
 }
 
 .hero {
-  padding: 4rem 0 2rem;
+  margin-top: 1rem;
+  padding: 3rem 1.25rem;
+  background: #e9f5ee;
+  border-radius: 1rem;
 }
 
 h1 {
@@ -80,6 +89,20 @@ h2 {
 
 .content-section {
   padding: 2rem 0;
+}
+
+.tip-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.link-list {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  list-style: none;
 }
 
 .card-grid {
@@ -121,8 +144,16 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tip-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
