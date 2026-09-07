@@ -162,3 +162,46 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: #e4eee8;
+    background: #132019;
+  }
+
+  a,
+  .tag {
+    color: #85d6ad;
+  }
+
+  .site-header {
+    background: #182920;
+    border-color: #395244;
+  }
+
+  .brand {
+    color: #b6e6ca;
+  }
+
+  .hero {
+    background: #203a2c;
+  }
+
+  .eyebrow,
+  .site-footer {
+    color: #aec1b6;
+  }
+
+  .feature-card {
+    background: #1b2d23;
+    border-color: #395244;
+  }
+
+  .tag {
+    background: #294c39;
+  }
+}
