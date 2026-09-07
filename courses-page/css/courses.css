@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+
+.site-header {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-wrap {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.logo {
+  color: #212529;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.main-nav a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
