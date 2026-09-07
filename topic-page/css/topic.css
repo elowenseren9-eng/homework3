@@ -63,6 +63,16 @@ main,
   padding: 4rem 0 2rem;
 }
 
+h1 {
+  margin: 0.4rem 0;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 28px;
+}
+
 .eyebrow {
   color: #63786d;
   letter-spacing: 0.08em;
@@ -72,7 +82,52 @@ main,
   padding: 2rem 0;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.feature-card {
+  display: flex;
+  padding: 1.25rem;
+  flex-direction: column;
+  border: 1px solid #dce7e0;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.feature-card h3 {
+  margin-bottom: 0;
+}
+
+.card-icon {
+  font-size: 32px;
+}
+
+.tag {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.15rem 0.6rem;
+  color: #176844;
+  background: #e6f4ec;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+}
+
 .site-footer {
   padding: 2rem 0;
   color: #63786d;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
